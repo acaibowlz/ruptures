@@ -1,8 +1,8 @@
 """Miscellaneous functions for ruptures."""
 
-from typing import Iterable, TypeVar, Iterator
 from itertools import tee
 from math import ceil
+from typing import Iterable, Iterator, TypeVar
 
 T = TypeVar("T")
 

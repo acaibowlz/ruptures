@@ -1,6 +1,7 @@
 r"""Draw a random partition."""
 
 from typing import Optional
+
 import numpy as np
 
 

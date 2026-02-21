@@ -1,12 +1,6 @@
 import pytest
 
-from ruptures.metrics import (
-    hamming,
-    hausdorff,
-    meantime,
-    precision_recall,
-    randindex,
-)
+from ruptures.metrics import hamming, hausdorff, meantime, precision_recall, randindex
 from ruptures.metrics.sanity_check import BadPartitions
 
 

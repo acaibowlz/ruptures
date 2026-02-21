@@ -5,7 +5,9 @@ r"""All estimators and cost functions are subclasses of.
 """
 
 import abc
+
 from typing_extensions import Self
+
 from ruptures.utils import pairwise
 
 

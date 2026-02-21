@@ -1,9 +1,10 @@
+cimport cython
+from libc.stdlib cimport free, malloc
+
 cimport ruptures.detection._detection.ekcpd as ekcpd
 
-from libc.stdlib cimport malloc, free
-
-cimport cython
 import numpy as np
+
 
 cpdef ekcpd_L2(double[:,:] signal, int n_bkps, int min_size):
 

@@ -3,15 +3,16 @@ r"""Bottom-up segmentation."""
 import heapq
 from bisect import bisect_left
 from functools import lru_cache
-from typing import Optional, Any
-from typing_extensions import Self
+from typing import Any, Optional
 
 import numpy as np
 from numpy.typing import NDArray
+from typing_extensions import Self
+
 from ruptures.base import BaseCost, BaseEstimator
 from ruptures.costs import cost_factory
-from ruptures.utils import Bnode, pairwise, sanity_check
 from ruptures.exceptions import BadSegmentationParameters
+from ruptures.utils import Bnode, pairwise, sanity_check
 
 
 class BottomUp(BaseEstimator):

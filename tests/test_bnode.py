@@ -1,4 +1,5 @@
 import numpy as np
+
 from ruptures.utils import Bnode
 
 

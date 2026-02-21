@@ -1,13 +1,15 @@
 r"""Efficient kernel change point detection (dynamic programming)"""
 
-from ruptures.base import BaseEstimator
-from ruptures.costs import cost_factory
-from ruptures.utils import from_path_matrix_to_bkps_list, sanity_check
-from ruptures.exceptions import BadSegmentationParameters
+from typing import Any, Optional
+
 import numpy as np
 from numpy.typing import NDArray
-from typing import Optional, Any
 from typing_extensions import Self
+
+from ruptures.base import BaseEstimator
+from ruptures.costs import cost_factory
+from ruptures.exceptions import BadSegmentationParameters
+from ruptures.utils import from_path_matrix_to_bkps_list, sanity_check
 
 from ._detection.ekcpd import (
     ekcpd_cosine,

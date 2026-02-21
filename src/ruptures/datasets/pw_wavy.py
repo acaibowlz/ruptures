@@ -4,8 +4,8 @@ from itertools import cycle
 from typing import Optional
 
 import numpy as np
-
 from numpy.typing import NDArray
+
 from ruptures.utils import draw_bkps
 
 

@@ -2,10 +2,11 @@ r"""Binary segmentation."""
 
 from functools import lru_cache
 from typing import Any, Optional, Union
-from typing_extensions import Self
 
 import numpy as np
 from numpy.typing import NDArray
+from typing_extensions import Self
+
 from ruptures.base import BaseCost, BaseEstimator
 from ruptures.costs import cost_factory
 from ruptures.exceptions import BadSegmentationParameters

@@ -1,13 +1,11 @@
 r"""CostL2 (least squared deviation)"""
 
-from numpy.typing import NDArray
 import numpy as np
+from numpy.typing import NDArray
 from typing_extensions import Self
 
-
-from ruptures.costs import NotEnoughPoints
-
 from ruptures.base import BaseCost
+from ruptures.costs import NotEnoughPoints
 
 
 class CostL2(BaseCost):

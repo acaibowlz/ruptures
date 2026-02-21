@@ -1,5 +1,6 @@
 import numpy as np
 import pytest
+
 from ruptures import Binseg
 from ruptures.costs import CostLinear, CostNormal, cost_factory
 from ruptures.costs.costml import CostMl

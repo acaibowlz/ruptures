@@ -2,14 +2,15 @@ r"""Dynamic programming."""
 
 from functools import lru_cache
 from typing import Any, Optional
-from typing_extensions import Self
 
 import numpy as np
 from numpy.typing import NDArray
-from ruptures.utils import sanity_check
-from ruptures.costs import cost_factory
+from typing_extensions import Self
+
 from ruptures.base import BaseCost, BaseEstimator
+from ruptures.costs import cost_factory
 from ruptures.exceptions import BadSegmentationParameters
+from ruptures.utils import sanity_check
 
 
 class Dynp(BaseEstimator):

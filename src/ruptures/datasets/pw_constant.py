@@ -1,9 +1,10 @@
 """Piecewise constant signal (with noise)"""
 
 from typing import Optional
-import numpy as np
 
+import numpy as np
 from numpy.typing import NDArray
+
 from ruptures.utils import draw_bkps
 
 

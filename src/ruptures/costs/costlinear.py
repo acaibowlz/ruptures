@@ -1,10 +1,9 @@
 r"""Linear model change."""
 
-from typing_extensions import Self
-
 import numpy as np
 from numpy.linalg import lstsq
 from numpy.typing import NDArray
+from typing_extensions import Self
 
 from ruptures.base import BaseCost
 from ruptures.costs import NotEnoughPoints

@@ -1,11 +1,12 @@
 r"""CostCosine (kernel change point detection with the cosine similarity)"""
 
-from typing_extensions import Self
 import numpy as np
 from numpy.typing import NDArray
+from scipy.spatial.distance import pdist, squareform
+from typing_extensions import Self
+
 from ruptures.base import BaseCost
 from ruptures.costs import NotEnoughPoints
-from scipy.spatial.distance import pdist, squareform
 
 
 class CostCosine(BaseCost):

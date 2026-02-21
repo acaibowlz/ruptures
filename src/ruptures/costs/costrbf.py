@@ -1,13 +1,14 @@
 r"""Kernelized mean change."""
 
 from typing import Optional
-from typing_extensions import Self
+
 import numpy as np
 from numpy.typing import NDArray
 from scipy.spatial.distance import pdist, squareform
+from typing_extensions import Self
 
-from ruptures.exceptions import NotEnoughPoints
 from ruptures.base import BaseCost
+from ruptures.exceptions import NotEnoughPoints
 
 
 class CostRbf(BaseCost):

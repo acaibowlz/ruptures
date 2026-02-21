@@ -1,7 +1,8 @@
 r"""Shift in linear model."""
 
-import numpy as np
 from typing import Optional
+
+import numpy as np
 from numpy.typing import NDArray
 
 from . import pw_constant

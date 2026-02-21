@@ -1,10 +1,10 @@
 r"""Change detection with a Mahalanobis-type metric."""
 
-import numpy as np
-from numpy.typing import NDArray
-
-from numpy.linalg import inv
 from typing import Optional
+
+import numpy as np
+from numpy.linalg import inv
+from numpy.typing import NDArray
 from typing_extensions import Self
 
 from ruptures.base import BaseCost

@@ -1,12 +1,13 @@
 r"""Gaussian process changes (CostNormal)"""
 
-from typing import Optional
-from numpy.typing import NDArray
-from typing_extensions import Self
 import warnings
+from typing import Optional
 
 import numpy as np
 from numpy.linalg import slogdet
+from numpy.typing import NDArray
+from typing_extensions import Self
+
 from ruptures.base import BaseCost
 from ruptures.costs import NotEnoughPoints
 

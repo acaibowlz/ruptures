@@ -1,7 +1,9 @@
+cimport cython
+
 cimport ruptures.utils._utils.convert_path_matrix as convert_pm
 
-cimport cython
 import numpy as np
+
 
 cpdef from_path_matrix_to_bkps_list(int[:] path_matrix_flat, int n_bkps, int n_samples, int n_bkps_max, int jump):
     # Init bkps_list array

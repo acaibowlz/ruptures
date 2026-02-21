@@ -1,8 +1,9 @@
+from copy import deepcopy
+
 import numpy as np
 from numpy.lib.stride_tricks import as_strided
 from numpy.linalg import lstsq
 from numpy.typing import NDArray
-from copy import deepcopy
 from typing_extensions import Self
 
 from ruptures.base import BaseCost
